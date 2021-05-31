@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+  <html lang="">
+
+    <style>
+      input[type=text], select {
+        width: 95%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgb(14, 14, 14);
+        border-radius: 4px;
+        box-sizing: border-box
+        }
+        
+        input[type=submit]{
+          width: 42%;
+          background-color: #126E82;
+          color: white;
+          padding: 14px 20px;
+          display: flex;
+          justify-content: center;
+          border: solid;
+          border-color: black;
+          border-radius: 50px;
+          cursor: pointer;
+          position: fixed; top: 1150px; left: 19px;
+        }
+
+ 
+        input[type=button]{
+          width: 42%;
+          background-color: #126E82;
+          color: white;
+          padding: 14px 20px;
+          display: flex;
+          justify-content: center;
+          border: solid;
+          border-color: black;
+          border-radius: 50px;
+          cursor: pointer;
+          position: fixed; top: 1150px; left: 350px;
+        }
+
+
+
+      /*  input[type=submit3] {
+          width: 95%;
+          background-color: #126E82;
+          color: white;
+          padding: 14px 20px;
+          display: flex;
+          justify-content: center;
+          border: solid;
+          border-color: black;
+          border-radius: 50px;
+          cursor: pointer; 
+        }*/
+      </style>
+
+    <head>
+      <script src="https://apis.google.com/js/platform.js" async defer></script>
+      <meta name="google-signin-client_id" content="612426829922-tdm04p394bhtnt7ooho8bse7hape8bq8.apps.googleusercontent.com">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Home screen</title>
+
+      <link rel="stylesheet"
+      type="text/css"
+      href="style.css"/>
+
+      <style> body {padding: 0; margin: 0;} </style>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+      <script src="p5.play.js"></script>
+      <script src="form.js"></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBCmrpn8m1XJyUKfGqbi1GFR6KMR_Nvf_k",
+    authDomain: "silicon-valley-314910.firebaseapp.com",
+    databaseURL: "https://silicon-valley-314910-default-rtdb.firebaseio.com",
+    projectId: "silicon-valley-314910",
+    storageBucket: "silicon-valley-314910.appspot.com",
+    messagingSenderId: "612426829922",
+    appId: "1:612426829922:web:c3fc059021c9be26da413b"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+    </head>
+    <body>
+<p>
+      <img src="asserts/img1.png"
+      width="380"
+      height="380"
+      />
+      </p>
+
+      <script src="sketch.js"></script>
+
+      <sub>
+      <input type="button2" value="SETTINGS">
+      </sub>
+
+    <sbm>
+      <input type="button2" value="MY ORDERS">
+    </sbm>
+
+
+     <form action="buy/index.html">
+      <input type="button" value="Buy">
+    </form>
+ 
+    <form action="sell/index.html"> 
+        <input type="submit" value="Sell">
+    </form>
+
+       <text>
+      no products yet
+       </text>
+
+
+    </body>
+  </html>
